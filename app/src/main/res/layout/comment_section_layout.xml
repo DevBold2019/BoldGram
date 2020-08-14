@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/girl_1"
+            android:id="@+id/commentProfilePicture" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/commentSectionNameTextView"
+            android:text="@string/name" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_margin="0.5dp"
+            android:textColor="@color/black"
+            android:id="@+id/commentSectionDescriptionTextView"
+            android:text="@string/caption" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/followerCommentTime"
+        android:padding="2dp"
+        android:layout_margin="5dp"
+        android:text="1h" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followerCommentLikes"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            android:text="27 likes" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followerReplyOption"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            android:text="Reply" />
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:id="@+id/likeCommentButton"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_favorite_border_24"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:padding="2dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <com.alexzh.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="1dp"
+        android:src="@drawable/bold_gram"
+        android:id="@+id/storyProfile"
+        android:clickable="false"
+        app:civ_border_color="@color/colorPrimary"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        app:view_borderWidth="2dp"
+        app:view_borderColor="@color/pink"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyName"
+        android:text="Ass Hole"
+        android:textColor="@color/black"
+        android:maxWidth="150dp"
+        android:textSize="12sp"
+        android:padding="1dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
